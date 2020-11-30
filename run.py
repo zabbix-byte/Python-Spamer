@@ -44,7 +44,7 @@ def MyProcess(char, loops):
     p0.join()
     p0.join()
 
-#MENOS PRECISO PORQUE FALTA PARALELIZAR LOS CORES I LOS ILOS PERO ES MOCHISIMO MAS RAPISO (3/100 lops sec ) FIABILIDAD(60%)
+#experimentos raros
 def CombinedFuncction(char, loops):
     loop = int(int(loops) / 3)
 
