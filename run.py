@@ -44,15 +44,9 @@ def MyProcess(char, loops):
     p0.join()
     p0.join()
 
-#THREADING + PROCESSING + PARALLELIZATION ( f(n) = θ(g(n)))
 #MENOS PRECISO PORQUE FALTA PARALELIZAR LOS CORES I LOS ILOS PERO ES MOCHISIMO MAS RAPISO (3/100 lops sec ) FIABILIDAD(60%)
-#SI SE APLICA LA PARALELIZACION Y SINCRONIZACION CORES/ILOS >  CALCULO ESTIMADO (0.5/100 LOPS SEC) FIABILIDAD (99 %)
-
 def CombinedFuncction(char, loops):
-    #sincronizador del loop
     loop = int(int(loops) / 3)
-
-    #Ejecucion del trading
 
     p0 = Process(target=simpleloop_0, args=(char, loop, 0,))
 
